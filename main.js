@@ -1,4 +1,4 @@
-/* global console, alert, prompt, myfunc */
+/* global console, alert, prompt,  */
 
 
 /*
@@ -12,7 +12,7 @@ function myFunc() {
 myFunc();
 */
 
-
+/*
 (function saywelcome() {
 
     "use strict";
@@ -20,5 +20,20 @@ myFunc();
     alert("Welcome To My Website");
 
 })();
+*/
+
+
+function convertUsdToRiyal(amount) {
+
+    "use strict";
+
+    var result = amount * 3.75;
+
+    return alert(result);
+
+};
+convertUsdToRiyal(100)
+
+
 
 
