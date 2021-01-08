@@ -22,7 +22,7 @@ myFunc();
 })();
 */
 
-
+/*
 function convertUsdToRiyal(amount) {
 
     "use strict";
@@ -33,7 +33,41 @@ function convertUsdToRiyal(amount) {
 
 };
 convertUsdToRiyal(100)
+*/
+
+/*
+function convertUsdToRiyal(amount) {
+
+    "use strict";
 
 
+    return alert(amount * 3.75);
 
+};
+convertUsdToRiyal(100)
+
+*/
+/*
+function convertUsdToRiyal() {
+
+    "use strict";
+
+    var amount = document.getElementById("price").innerHTML; //100
+
+    alert(amount * 3.75);
+
+}
+convertUsdToRiyal();
+*/
+
+(function convertUsdToRiyal() {
+
+    "use strict";
+
+    var amount = document.getElementById("price").innerHTML; //100
+
+    alert(amount * 3.75);
+
+})
+();
 
