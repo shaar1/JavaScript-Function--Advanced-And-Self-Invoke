@@ -82,7 +82,7 @@ function convertUsdToRiyal() {
     console.log(amount);
 }
 */
-
+/*
 function convertUsdToRiyal() {
 
     "use strict";
@@ -95,5 +95,20 @@ function convertUsdToRiyal() {
     
     amount + " Dollar Is Worth " + result + " Riyal";
 }
+*/
+
+function convertUsdToRiyal() {
+
+    "use strict";
+
+    var amount = document.getElementById("dollar").value,
+
+    result = amount * 3.75; // 100 * 3.75 = 375
+
+    massage = document.getElementById("massage")
+
+    massage.innerHTML = amount + " Dollar Is Worth " + result + " Riyal";
+}
+
 
 
