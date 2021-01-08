@@ -96,7 +96,7 @@ function convertUsdToRiyal() {
     amount + " Dollar Is Worth " + result + " Riyal";
 }
 */
-
+/*
 function convertUsdToRiyal() {
 
     "use strict";
@@ -109,6 +109,39 @@ function convertUsdToRiyal() {
 
     massage.innerHTML = amount + " Dollar Is Worth " + result + " Riyal";
 }
+*/
+
+function convertUsdToRiyal() {
+
+    "use strict";
+
+    var amount = document.getElementById("dollar").value,
+
+        result = amount * 3.75; // 100 * 3.75 = 375
+
+    massage = document.getElementById("massage");
 
 
+    if (amount === "") { // Amount Cant Be Empty
 
+        massage.innerHTML = "This Field Can,t Be Empty";
+
+    } else if (isNaN(amount)) { //Amount Must Be Number
+
+        massage.innerHTML = "This Field Accept Numbers Only";
+
+    } else if (amount === "0") { // Amount Cant Be 0
+
+        massage.innerHTML = "The value Must Not Be 0";
+ 
+    } else if (amount < 0) { // Amount Cant Be Negative Number
+
+        massage.innerHTML = "The value Must Not Be Negative Number";
+
+    } else {
+
+        massage.innerHTML = amount + " Dollar Is Worth " + result + " Riyal";
+    }
+
+
+}
